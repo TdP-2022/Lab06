@@ -7,6 +7,7 @@ public class Rilevamento {
 	private String localita;
 	private Date data;
 	private int umidita;
+	
 
 	public Rilevamento(String localita, Date data, int umidita) {
 		this.localita = localita;
@@ -38,15 +39,19 @@ public class Rilevamento {
 		this.umidita = umidita;
 	}
 
-	// @Override
-	// public String toString() {
-	// return localita + " " + data + " " + umidita;
-	// }
+	 @Override
+	 public String toString() {
+	    return localita + " " + data + " " + umidita;
+	 }
 
-	@Override
-	public String toString() {
+	public String stampaUmidita() {
 		return String.valueOf(umidita);
 	}
+	
+	public String transformDate(Date date) {
+		return String.valueOf(date);
+	}
+
 
 	
 

@@ -1,5 +1,6 @@
 package it.polito.tdp.meteo.DAO;
 
+import java.util.LinkedList;
 import java.util.List;
 
 import it.polito.tdp.meteo.model.Rilevamento;
@@ -16,6 +17,7 @@ public class TestMeteoDAO {
 		for (Rilevamento r : list) {
 			System.out.format("%-10s %2td/%2$2tm/%2$4tY %3d%%\n", r.getLocalita(), r.getData(), r.getUmidita());
 		}
+		
 		
 //		System.out.println(dao.getAllRilevamentiLocalitaMese(1, "Genova"));
 //		System.out.println(dao.getAvgRilevamentiLocalitaMese(1, "Genova"));
